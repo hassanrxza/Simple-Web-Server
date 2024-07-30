@@ -22,7 +22,7 @@ def handle_client(client: s.socket):
     with client as sock:
         request = sock.recv(1024).decode('utf-8').split(' ')[0:3]
         request = ' '.join(request)
-        path = "../../../E-Project/Star Classes/JoinNow.html"
+        path = "Any PATH of file"           # you can also take apart the user agent send with the request and strip the path to serve the file making that the root of the project.
         print(f"[*] Received: {request}")
 
         try:
